@@ -35,12 +35,15 @@ public class DBInit {
         adminSet.add(roleUser);
         userSet.add(roleUser);
 
-        User newUser = new User("Ivan", "Ivanov", 23, "ivan@mail.com", "User",
+        User newUser = new User("Alex", "Savelyev", 33, "user@gmail.com", "user",
                 "user", userSet);
-        User admin = new User("Garry", "Potter", 30, "garry@gmail.com", "admin",
+        User admin = new User("Aigul", "Savelyeva", 30, "admin@gmail.com", "admin",
                 "admin", adminSet);
+        User newUser2 = new User("Yosyf","Akhmetov",31,"user2@gmail.com","user2",
+                "user2",userSet);
 
         userService.saveUser(newUser);
         userService.saveUser(admin);
+        userService.saveUser(newUser2);
     }
 }
